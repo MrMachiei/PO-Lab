@@ -5,7 +5,7 @@ public class CoalPowerStation{
     private double efficiency;
     private int numberOfEmployees;
     private boolean isActive;
-
+    //a random staff
     //%%%%%%%%%
     public CoalPowerStation(){
         maxCoalOnFeeder = 0;
@@ -68,5 +68,8 @@ public class CoalPowerStation{
         if (stockStatus < maxCoalOnFeeder) return; // miesjce na exception
         stockStatus -= maxCoalOnFeeder;
         //return true;
+    }
+    public void testOne(){
+        return;
     }
 }
