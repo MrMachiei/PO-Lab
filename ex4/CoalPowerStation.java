@@ -69,7 +69,4 @@ public class CoalPowerStation{
         stockStatus -= maxCoalOnFeeder;
         //return true;
     }
-    public void testOne(){
-        return;
-    }
 }
