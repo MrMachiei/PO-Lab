@@ -10,5 +10,7 @@ class CoalPowerStation{
 
     public:
     CoalPowerStation();
+    CoalPowerStation(const CoalPowerStation &A);
+    CoalPowerStation(CoalPowerStation &&A);
     ~CoalPowerStation();
 };
