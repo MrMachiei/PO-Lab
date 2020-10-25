@@ -5,6 +5,7 @@ stockStatus(nullptr),
 efficiency(nullptr),
 numberOfEmployees(nullptr),
 isActive(nullptr){
+    *stockStatus = 0;
     }
 CoalPowerStation::~CoalPowerStation(){
     if(maxCoalOnFeeder != nullptr) delete maxCoalOnFeeder;
@@ -37,6 +38,14 @@ CoalPowerStation::CoalPowerStation(CoalPowerStation &&A):
         A.efficiency = nullptr;
         A.isActive = nullptr;
 }
+CoalPowerStation::CoalPowerStation(double stockStatus):
+    maxCoalOnFeeder(nullptr),
+    stockStatus(new double),
+    efficiency(nullptr),
+    numberOfEmployees(nullptr),
+    isActive(nullptr){
+        *(this->stockStatus) = stockStatus;
+    }
 void CoalPowerStation::setMaxCoalOnFeeder(double amount){
     if (amount <= 0) return; //miejsce na exception
     if (*maxCoalOnFeeder == 0) *maxCoalOnFeeder = amount;
@@ -73,6 +82,10 @@ void CoalPowerStation::addToStock(int amount){
 }
 void CoalPowerStation::hireEmployees(int amount){
     if (amount <= 0) return;// false; //miejsce na exception
+    if(numberOfEmployees == nullptr){
+        numberOfEmployees = new int;
+        *numberOfEmployees = 0;
+    }
     *numberOfEmployees += amount;
     //return true;
 }
@@ -82,6 +95,7 @@ void CoalPowerStation::fireEmployees(int amount){
     *numberOfEmployees -= amount;
     //return true;  
 }
+//sprawdzic czy da sie wszystko zrobic!!!
 void CoalPowerStation::takeMaxFeederFromStock(){
     if (*stockStatus < *maxCoalOnFeeder) return; // miesjce na exception
     *stockStatus -= *maxCoalOnFeeder;

@@ -12,6 +12,7 @@ class CoalPowerStation{
     CoalPowerStation();
     CoalPowerStation(const CoalPowerStation &A);
     CoalPowerStation(CoalPowerStation &&A);
+    CoalPowerStation(double stockStatus);
     ~CoalPowerStation();
     void setMaxCoalOnFeeder(double amount);
     void setEfficiency(double efficiency);
