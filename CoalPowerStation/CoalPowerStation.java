@@ -1,4 +1,4 @@
-package ex4;
+package CoalPowerStation;
 public class CoalPowerStation{
     private double maxCoalOnFeeder;
     private double stockStatus;
