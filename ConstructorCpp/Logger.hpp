@@ -1,5 +1,4 @@
-#include <ctime>
-#include <iostream>
+#include "Stopper.hpp"
 class Logger{
 private:
     bool debug;

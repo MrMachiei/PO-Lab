@@ -18,5 +18,6 @@ int main(int argc, char* argv[]){
     std::cout << example.getStockStatus();
     bar(std::move(example));
     example.log("Jestem"); // Nie mozna było - standadowe dziedzicienie to dziedziczenie prywatne - wszystko staje sie private, czyli nasza metoda public stala sie private
+    example.writeTime();
     return 0;
 }

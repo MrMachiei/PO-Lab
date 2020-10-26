@@ -1,6 +1,6 @@
 #include "Logger.hpp"
 
-class CoalPowerStation: public Logger{
+class CoalPowerStation: public Logger, public Stopper{
     private:
     double *maxCoalOnFeeder;
     double *stockStatus;
