@@ -1,5 +1,4 @@
 #include "CoalPowerStation.hpp"
-
 CoalPowerStation::CoalPowerStation(): maxCoalOnFeeder(nullptr),
 stockStatus(nullptr),
 efficiency(nullptr),
@@ -47,36 +46,54 @@ CoalPowerStation::CoalPowerStation(double stockStatus):
         *(this->stockStatus) = stockStatus;
     }
 void CoalPowerStation::setMaxCoalOnFeeder(double amount){
+    if(maxCoalOnFeeder == nullptr){
+        maxCoalOnFeeder = new double;
+        *maxCoalOnFeeder = 0;
+    }
     if (amount <= 0) return; //miejsce na exception
     if (*maxCoalOnFeeder == 0) *maxCoalOnFeeder = amount;
     //miejsce na exception
     }
 void CoalPowerStation::setEfficiency(double efficiency){
+    if(this->efficiency == nullptr){
+        this->efficiency = new double;
+        *(this->efficiency) = 1;
+    }
     if (efficiency > 1 || efficiency <= 0) return; //Exception
     *(this->efficiency) = efficiency;
 }
 void CoalPowerStation::setIsActive(bool isActive){
+    if(this->isActive == nullptr){
+        this->isActive = new bool;
+        *(this->isActive) = true;
+    }
     *(this->isActive) = isActive;
 }
     //%%%%%%%%
 double CoalPowerStation::getMaxCoalOnFeeder(){
+     if (maxCoalOnFeeder == nullptr) return 0;
     return *maxCoalOnFeeder;
 }
 double CoalPowerStation::getStockStatus(){
+     if (stockStatus == nullptr) return 0;
     return *stockStatus;
 }
 double CoalPowerStation::getEfficiency(){
+     if (efficiency == nullptr) return 0.0;
     return *efficiency;
 }
-double CoalPowerStation::getNumberOfEmployees(){
+int CoalPowerStation::getNumberOfEmployees(){
+    if (numberOfEmployees == nullptr) return 0;
     return *numberOfEmployees;
 }
 bool CoalPowerStation::getIsActive(){
+    if (isActive == nullptr) return false;
     return *isActive;
 }
 //voidy czy booleany?
 //%%%%%%%%
 void CoalPowerStation::addToStock(int amount){
+    if(stockStatus == nullptr) return;
     if (amount <= 0) return; //miejsce na exception
     *stockStatus += amount;
 }
@@ -90,13 +107,15 @@ void CoalPowerStation::hireEmployees(int amount){
     //return true;
 }
 void CoalPowerStation::fireEmployees(int amount){
+    if(numberOfEmployees == nullptr) return;
     if (amount <= 0) return; //miejsce na exception
-    //if (amount >= numberOfEmployees) return false; //tez exception
+    if (amount >= *numberOfEmployees) return; //tez exception
     *numberOfEmployees -= amount;
     //return true;  
 }
 //sprawdzic czy da sie wszystko zrobic!!!
 void CoalPowerStation::takeMaxFeederFromStock(){
+    if(stockStatus == nullptr || maxCoalOnFeeder == nullptr) return;
     if (*stockStatus < *maxCoalOnFeeder) return; // miesjce na exception
     *stockStatus -= *maxCoalOnFeeder;
     //return true;

@@ -9,12 +9,14 @@ void qux(const CoalPowerStation &&a){
     std::cout << "Hello from qux!" << std::endl;
 }
 int main(int argc, char* argv[]){
-    CoalPowerStation example(100);
-    //example.setMaxCoalOnFeeder(50);
-    //example.setEfficiency(0.87);
-    //example.setIsActive(true);
-    //zrobic to samo co z emp
+    CoalPowerStation example(10000);
+    example.setMaxCoalOnFeeder(1000);
+    example.setEfficiency(0.87);
+    example.setIsActive(true);
     example.hireEmployees(10);
+    example.takeMaxFeederFromStock();
+    std::cout << example.getStockStatus();
     bar(std::move(example));
+    example.log("Jestem"); // Nie mozna było - standadowe dziedzicienie to dziedziczenie prywatne - wszystko staje sie private, czyli nasza metoda public stala sie private
     return 0;
 }

@@ -1,6 +1,6 @@
-#include <iostream>
+#include "Logger.hpp"
 
-class CoalPowerStation{
+class CoalPowerStation: public Logger{
     private:
     double *maxCoalOnFeeder;
     double *stockStatus;
@@ -20,7 +20,7 @@ class CoalPowerStation{
     double getMaxCoalOnFeeder();
     double getStockStatus();
     double getEfficiency();
-    double getNumberOfEmployees();
+    int getNumberOfEmployees();
     bool getIsActive();
     void addToStock(int amount);
     void hireEmployees(int amount);
