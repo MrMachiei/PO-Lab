@@ -1,6 +1,10 @@
 #include "Samochod.hpp"
+#include <algorithm>
+#include <vector>
+using namespace std;
 
 int main(){
+    {
     Samochod s1(123, "audi");
     Samochod s2(0, "bmw");
     Samochod s3(200, "");
@@ -22,4 +26,7 @@ int main(){
     if(!s3){
         std::cout << "!S3\n";
     }
+    }  
+    vector <Samochod> v;
+
 }
