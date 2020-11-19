@@ -5,12 +5,12 @@
 
 class Osoba{
     protected:
-        std::string imieNazwisko;
-        std::string dataUrodzenia;
-        Adres adresZamieszkania;
+        std::string* imieNazwisko;
+        std::string* dataUrodzenia;
+        Adres* adresZamieszkania;
     public:
         Osoba();
-        Osoba(std::string imieNazwisko, std::string dataUrodzenia, Adres adresZamieszkania);
+        Osoba(std::string imieNazwisko);
         void setImieNazwisko(std::string imieNazwisko);
         void setDataUrodzenia(std::string dataUrodzenia);
         void setAdresZamieszkania(std::string ulica, int numerDomu, int kodPocztowy, std::string miasto);
