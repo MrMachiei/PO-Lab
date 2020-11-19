@@ -3,9 +3,6 @@
 
 #include "Osoba.hpp"
 
-class Pracownik: Osoba{
-    private:
-        std::string imie;
-        std::string nazwisko;
+class Student: Osoba{
 };
 #endif //STUDENT_H

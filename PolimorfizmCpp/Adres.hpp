@@ -13,8 +13,8 @@ class Adres{
         Adres();
         Adres(std::string ulica, int numerDomu, int numedLokalu, int kodPocztowy, std::string miasto);
         Adres(std::string ulica, int numerDomu, int kodPocztowy, std::string miasto);
-        Adres(Adres &&A);
         Adres(const Adres &A);
         ~Adres();
+        void wypisz();
 };
 #endif //ADRES_H
