@@ -11,6 +11,9 @@ class Osoba{
     public:
         Osoba();
         Osoba(std::string imieNazwisko);
+        Osoba(Osoba const &A);
+        Osoba(Osoba &&A);
+        Osoba& operator= (Osoba &&A);
         void setImieNazwisko(std::string imieNazwisko);
         void setDataUrodzenia(std::string dataUrodzenia);
         void setAdresZamieszkania(std::string ulica, int numerDomu, int kodPocztowy, std::string miasto);
