@@ -19,5 +19,6 @@ int main(int argc, char* argv[]){
     bar(std::move(example));
     example.log("Jestem"); // Nie mozna było - standadowe dziedzicienie to dziedziczenie prywatne - wszystko staje sie private, czyli nasza metoda public stala sie private
     example.writeTime();
+    //w javie nie istnieje wielokrotne dziedziczenie, zastepuje to mechanizm interfejsow i ich wielokrotnych dziedziczen
     return 0;
 }
