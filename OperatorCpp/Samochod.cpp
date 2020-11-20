@@ -36,3 +36,11 @@ Samochod Samochod::operator ++ (int){
     ++(*this);
     return tmp;
 }
+Samochod& Samochod::operator,(Samochod A){
+    this->liczbaKilometrow += A.liczbaKilometrow;
+    return *this;
+}
+Samochod& Samochod::operator|=(Samochod A){
+    this->liczbaKilometrow |= A.liczbaKilometrow;
+    return *this;
+}

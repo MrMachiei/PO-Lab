@@ -19,6 +19,8 @@ public:
     bool operator < (const Samochod &samochod) const;
     Samochod& operator ++ ();
     Samochod operator ++ (int);
+    Samochod& operator,(Samochod A);
+    Samochod& operator|=(Samochod A);
     //uzyte const aby nie mozna bylo zmienic wartosci elementow w wyniku dzialania
 
 };
