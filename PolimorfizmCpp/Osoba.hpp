@@ -21,7 +21,7 @@ class Osoba{
         std::string getImieNazwisko();
         std::string getDataUrodzenia();
         Adres getAdresZamieszkania();
-        ~Osoba();
-        void przedstaw();
+        virtual ~Osoba();
+        void virtual przedstaw() = 0;
 };
 #endif //OSOBA_H

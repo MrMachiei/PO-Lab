@@ -40,11 +40,11 @@ Adres& Adres::operator= (Adres&& A){
 }
 
 Adres::~Adres(){
-    if (ulica != nullptr) delete ulica;
-    if (numerDomu != nullptr) delete numerDomu;
-    if (numerLokalu != nullptr) delete numerLokalu;
-    if (kodPocztowy != nullptr) delete kodPocztowy;
-    if (miasto != nullptr) delete miasto;
+    delete ulica;
+    delete numerDomu;
+    delete numerLokalu;
+    delete kodPocztowy;
+    delete miasto;
 }
 
 void Adres::wypisz(){

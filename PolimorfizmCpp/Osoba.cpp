@@ -6,8 +6,7 @@ Osoba::Osoba(std::string imieNazwisko): imieNazwisko(new std::string), dataUrodz
     *(this->imieNazwisko) = imieNazwisko;
 }
 
-Osoba::Osoba(Osoba const &A): imieNazwisko(new std::string(*(A.imieNazwisko))), dataUrodzenia(new std::string(*(A.dataUrodzenia))),
-adresZamieszkania(new Adres(*(A.adresZamieszkania))){}
+Osoba::Osoba(Osoba const &A): imieNazwisko(new std::string(*(A.imieNazwisko))), dataUrodzenia(new std::string(*(A.dataUrodzenia))),adresZamieszkania(new Adres(*(A.adresZamieszkania))){}
 
 Osoba::Osoba(Osoba &&A): imieNazwisko(nullptr), dataUrodzenia(nullptr),
 adresZamieszkania(nullptr){
@@ -60,13 +59,8 @@ std::string Osoba::getDataUrodzenia(){return *dataUrodzenia;}
 
 Adres Osoba::getAdresZamieszkania(){return *adresZamieszkania;}
 
-void Osoba::przedstaw(){
-    if( !(imieNazwisko == nullptr)) std::cout << *imieNazwisko << std::endl;
-    if( !(dataUrodzenia == nullptr)) std::cout << "Urodzony(a): " << *dataUrodzenia << std::endl;
-    if( !(adresZamieszkania == nullptr)) adresZamieszkania->wypisz();
-}
 Osoba::~Osoba(){
-    if (imieNazwisko != nullptr) delete imieNazwisko;
-    if (dataUrodzenia != nullptr) delete dataUrodzenia;
-    if (adresZamieszkania != nullptr) delete adresZamieszkania;
+    delete imieNazwisko;
+    delete dataUrodzenia;
+    delete adresZamieszkania;
 }
