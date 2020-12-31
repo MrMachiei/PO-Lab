@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - JavaSound",
+            "request": "launch",
+            "mainClass": "JavaSound.JavaSound",
+            "projectName": "zad4_b32062ad"
+        },
+        {
             "name": "g++ - Kompiluj i debuguj aktywny plik",
             "type": "cppdbg",
             "request": "launch",
