@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Bank",
+            "request": "launch",
+            "mainClass": "WyjatkiJava.Bank",
+            "projectName": "zad4_b32062ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch GenericsType",
+            "request": "launch",
+            "mainClass": "SzablonyJava.main.GenericsType",
+            "projectName": "zad4_b32062ad"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - JavaSound",
             "request": "launch",
             "mainClass": "JavaSound.JavaSound",
