@@ -1,0 +1,3 @@
+/Users/maciejwalczykowski/Desktop/Szachy/CMakeFiles/rebuild_cache.dir
+/Users/maciejwalczykowski/Desktop/Szachy/CMakeFiles/edit_cache.dir
+/Users/maciejwalczykowski/Desktop/Szachy/CMakeFiles/SFMLTest.dir
