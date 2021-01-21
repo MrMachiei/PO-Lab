@@ -1428,6 +1428,7 @@
                     if(id == 200){
                         reset();
                         if(*language == "polski"){
+                            (topT->at(0))->setString("Wyjdz");
                             (menuT->at(0))->setString("jezyk");
                             (menuT->at(3))->setString("piony");
                             (menuT->at(8))->setString("dzwieki");
@@ -1435,6 +1436,7 @@
                             (menuT->at(16))->setString("zapisz");
                             (menuT->at(17))->setString("reset");
                         }else{
+                            (topT->at(0))->setString("Quit");
                             (menuT->at(0))->setString("lang");
                             (menuT->at(3))->setString("pieces");
                             (menuT->at(8))->setString("sound");
@@ -1450,6 +1452,7 @@
                         eff->stop();
                         eff->play();
                         if(*language == "polski"){
+                            (topT->at(0))->setString("Wyjdz");
                             (menuT->at(0))->setString("jezyk");
                             (menuT->at(3))->setString("piony");
                             (menuT->at(8))->setString("dzwieki");
@@ -1457,6 +1460,7 @@
                             (menuT->at(16))->setString("zapisz");
                             (menuT->at(17))->setString("reset");
                         }else{
+                            (topT->at(0))->setString("Quit");
                             (menuT->at(0))->setString("lang");
                             (menuT->at(3))->setString("pieces");
                             (menuT->at(8))->setString("sound");
@@ -1473,6 +1477,7 @@
                                 case 1:{
                                     *language = (*itT)->getString();
                                     if(*language == "polski"){
+                            (topT->at(0))->setString("Wyjdz");
                             (menuT->at(0))->setString("jezyk");
                             (menuT->at(3))->setString("piony");
                             (menuT->at(8))->setString("dzwieki");
@@ -1480,6 +1485,7 @@
                             (menuT->at(16))->setString("zapisz");
                             (menuT->at(17))->setString("reset");
                         }else{
+                            (topT->at(0))->setString("Quit");
                             (menuT->at(0))->setString("lang");
                             (menuT->at(3))->setString("pieces");
                             (menuT->at(8))->setString("sound");
@@ -1533,6 +1539,7 @@
         }
         else if(*topMenu){
             Button* a;
+            
             for(auto it = top->begin(); it < top->end(); it++){
                 a = *it;
                 if(checkMouse(v, a)){
@@ -1781,10 +1788,6 @@
             name[j] = "";
             points[j] = 0;
         }
-        for(int i = 0 ; i < 5; i++){
-            std::cout << name[i] << std::endl;
-        }
-        std::cout << std::endl;
         if( i == 0){
             name[0] = n_;
             points[0] = 1;
@@ -1805,10 +1808,6 @@
                 points[j] = 1;
             }
         }
-        for(int i = 0 ; i < 5; i++){
-            std::cout << name[i] << std::endl;
-        }
-        std::cout  << std::endl;
         for(int i = 0; i < 5; i++){
             for(int j = i+1; j < 5; j++){
                 if( points[i] < points[j]){
@@ -1818,18 +1817,11 @@
 
             }
         }
-        for(int i = 0 ; i < 5; i++){
-            std::cout << name[i] << std::endl;
-        }
-        std::cout << std::endl;
+
         data.open("../resources/best.txt", std::ios::out);
         for(int i = 0; i < 5; i++){
             data << name[i] << " " << points[i] << std::endl;
         }
-        for(int i = 0 ; i < 5; i++){
-            std::cout<< name[i] << std::endl;
-        }
-        std::cout << std::endl;
         data.close();
 
     }
@@ -1902,7 +1894,7 @@
         b->setOutlineColor(sf::Color(73,67,67));
         b->setOutlineThickness(2);
         t = new sf::Text();
-        if(*language == "english") t->setString("polish");
+        if(*language == "english") t->setString("polski");
         else t->setString("polski");
         t->setFillColor(sf::Color::Black);
         t->setPosition(sf::Vector2f(x+w+3*w/4,y+h/4));
@@ -1917,7 +1909,7 @@
         b->setOutlineThickness(2);
         t = new sf::Text();
         if(*language == "english") t->setString("english");
-        else t->setString("angielski");
+        else t->setString("english");
         t->setFillColor(sf::Color::Black);
         t->setPosition(sf::Vector2f(x+3*w+w/2+w/10,y+h/4));
         t->setFont(*font);

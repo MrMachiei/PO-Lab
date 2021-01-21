@@ -77,7 +77,7 @@ CMakeFiles/Szachy.dir/classes/Button.cpp.o
  ../include/SFML/Window/Window.hpp
  ../include/SFML/Window/WindowHandle.hpp
  ../include/SFML/Window/WindowStyle.hpp
- /Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/Szachy/classes/Button.cpp
+ /Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/zad4/Szachy/classes/Button.cpp
 CMakeFiles/Szachy.dir/classes/GameWindow.cpp.o
  ../dir/Button.hpp
  ../dir/GameWindow.hpp
@@ -175,7 +175,7 @@ CMakeFiles/Szachy.dir/classes/GameWindow.cpp.o
  ../include/SFML/Window/Window.hpp
  ../include/SFML/Window/WindowHandle.hpp
  ../include/SFML/Window/WindowStyle.hpp
- /Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/Szachy/classes/GameWindow.cpp
+ /Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/zad4/Szachy/classes/GameWindow.cpp
 CMakeFiles/Szachy.dir/classes/Player.cpp.o
  ../dir/Button.hpp
  ../dir/Player.hpp
@@ -254,7 +254,7 @@ CMakeFiles/Szachy.dir/classes/Player.cpp.o
  ../include/SFML/Window/Window.hpp
  ../include/SFML/Window/WindowHandle.hpp
  ../include/SFML/Window/WindowStyle.hpp
- /Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/Szachy/classes/Player.cpp
+ /Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/zad4/Szachy/classes/Player.cpp
 CMakeFiles/Szachy.dir/classes/Tile.cpp.o
  ../dir/Button.hpp
  ../dir/GameWindow.hpp
@@ -352,7 +352,7 @@ CMakeFiles/Szachy.dir/classes/Tile.cpp.o
  ../include/SFML/Window/Window.hpp
  ../include/SFML/Window/WindowHandle.hpp
  ../include/SFML/Window/WindowStyle.hpp
- /Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/Szachy/classes/Tile.cpp
+ /Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/zad4/Szachy/classes/Tile.cpp
 CMakeFiles/Szachy.dir/classes/Window.cpp.o
  ../dir/Button.hpp
  ../dir/Window.hpp
@@ -447,7 +447,7 @@ CMakeFiles/Szachy.dir/classes/Window.cpp.o
  ../include/SFML/Window/Window.hpp
  ../include/SFML/Window/WindowHandle.hpp
  ../include/SFML/Window/WindowStyle.hpp
- /Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/Szachy/classes/Window.cpp
+ /Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/zad4/Szachy/classes/Window.cpp
 CMakeFiles/Szachy.dir/classes/main.cpp.o
  ../dir/Button.hpp
  ../dir/GameWindow.hpp
@@ -545,4 +545,4 @@ CMakeFiles/Szachy.dir/classes/main.cpp.o
  ../include/SFML/Window/Window.hpp
  ../include/SFML/Window/WindowHandle.hpp
  ../include/SFML/Window/WindowStyle.hpp
- /Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/Szachy/classes/main.cpp
+ /Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/zad4/Szachy/classes/main.cpp

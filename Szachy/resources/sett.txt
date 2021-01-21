@@ -1,4 +1,4 @@
-polski
+english
 set_1
 set_1
 Roboto/Roboto-Regular.ttf

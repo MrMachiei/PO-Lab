@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/Szachy -I/Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/Szachy/dir -I/Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/Szachy/include
+CXX_INCLUDES = -I/Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/zad4/Szachy -I/Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/zad4/Szachy/dir -I/Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/zad4/Szachy/include
 
 CXX_FLAGS =  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wall -std=gnu++11
 
