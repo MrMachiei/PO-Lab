@@ -1,3 +1,0 @@
-/Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/zad4/Szachy/build/CMakeFiles/rebuild_cache.dir
-/Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/zad4/Szachy/build/CMakeFiles/edit_cache.dir
-/Users/maciejwalczykowski/Desktop/Studia/Sem3/PO/Projekty/zad4/Szachy/build/CMakeFiles/Szachy.dir
