@@ -1429,6 +1429,7 @@
                         reset();
                         if(*language == "polski"){
                             (topT->at(0))->setString("Wyjdz");
+                            tHelp[5]->setString("wyglad");
                             (menuT->at(0))->setString("jezyk");
                             (menuT->at(3))->setString("piony");
                             (menuT->at(8))->setString("dzwieki");
@@ -1436,6 +1437,7 @@
                             (menuT->at(16))->setString("zapisz");
                             (menuT->at(17))->setString("reset");
                         }else{
+                            tHelp[5]->setString("setts");
                             (topT->at(0))->setString("Quit");
                             (menuT->at(0))->setString("lang");
                             (menuT->at(3))->setString("pieces");
@@ -1453,6 +1455,7 @@
                         eff->play();
                         if(*language == "polski"){
                             (topT->at(0))->setString("Wyjdz");
+                            tHelp[5]->setString("wyglad");
                             (menuT->at(0))->setString("jezyk");
                             (menuT->at(3))->setString("piony");
                             (menuT->at(8))->setString("dzwieki");
@@ -1460,6 +1463,7 @@
                             (menuT->at(16))->setString("zapisz");
                             (menuT->at(17))->setString("reset");
                         }else{
+                            tHelp[5]->setString("setts");
                             (topT->at(0))->setString("Quit");
                             (menuT->at(0))->setString("lang");
                             (menuT->at(3))->setString("pieces");
@@ -1478,6 +1482,7 @@
                                     *language = (*itT)->getString();
                                     if(*language == "polski"){
                             (topT->at(0))->setString("Wyjdz");
+                            tHelp[5]->setString("wyglad");
                             (menuT->at(0))->setString("jezyk");
                             (menuT->at(3))->setString("piony");
                             (menuT->at(8))->setString("dzwieki");
@@ -1485,6 +1490,7 @@
                             (menuT->at(16))->setString("zapisz");
                             (menuT->at(17))->setString("reset");
                         }else{
+                            tHelp[5]->setString("setts");
                             (topT->at(0))->setString("Quit");
                             (menuT->at(0))->setString("lang");
                             (menuT->at(3))->setString("pieces");
